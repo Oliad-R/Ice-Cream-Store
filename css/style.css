@@ -1,0 +1,384 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+    font-family: 'monument_extendedregular';
+    src: url('c:/users/oliad/onedrive/documents/coding/projects/ice cream store/fonts/Monument Extended/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('c:/users/oliad/onedrive/documents/coding/projects/ice cream store/fonts/Monument Extended/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  z-index: -2;
+}
+
+
+body {
+  height: 100vh;
+}
+
+
+#landing-page {
+  background: url('c:/users/oliad/onedrive/documents/coding/projects/ice cream store/images/bg-2.png') no-repeat center center/cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.scroll-btns li {
+  border: 0.9px solid #000;
+  z-index: 1;
+  background: transparent;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(25px, 240px);
+  width: 15px;
+  height: 15px;
+  list-style: none;
+  color: transparent;
+}
+
+.scroll-btns li:hover{
+  background-color: black;
+
+}
+
+.scroll-btns a {
+  text-decoration: none;
+  color: transparent;
+}
+
+.btn-2 {
+  margin-top: 30px;
+}
+
+.btn-3 {
+  margin-top: 60px;
+}
+
+.btn-4 {
+  margin-top: 90px;
+}
+
+.btn-5 {
+  margin-top: 120px;
+}
+
+.btn-6 {
+  margin-top: 150px;
+}
+
+#navbar {
+  z-index: 1;
+  background:transparent;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  display: block;
+  transition: top 0.3s;
+  /*box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.25);**/
+}
+
+.navbar .con-logo img{
+  width: 50px;
+  transform: translate(-40px);
+}
+
+.navbar {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin: 30px;
+  position: fixed;
+  top: -22px;
+  transition: top 0.3s;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 70%;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+  color: #F487B6;
+  margin-left: 10px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #F487B6;
+}
+
+/*.navbar .con-btns {
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 50%;
+}
+
+.navbar button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #F487B6;
+  color: white;
+  border: none;
+  border-radius: 19px;
+  margin-left: 20px;
+  padding: 5px 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+**/
+
+.social-icons  {
+  position: fixed;
+  height: 22px;
+  width: auto;
+}
+
+.main-txt {
+  z-index: 0;
+  color: #8D4F3F;
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  margin-left: 70px;
+  padding: 0px 0px;
+}
+
+.main-txt h1{
+  font-family: "monument_extendedregular";
+  font-size: 100px;
+  line-height: 80px;
+}
+
+.main-txt h2 {
+  font-size: 70px;
+  margin-top: 170px;
+}
+
+.main-txt h3 {
+  font-size: 50px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Start of the Shop Page**/
+
+#shop {
+  position: relative;
+}
+
+.shop-container {
+  scroll-snap-align: center;
+  background-color: #FCDDC5;
+  width: 100%;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  z-index: -1;
+}
+
+.shop-title {
+  margin-top: 40px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.shop-title img {
+  transform: rotate(-25deg);
+  margin-right: 10px;
+  width: auto;
+  height: 64px;
+}
+
+.items {
+  height: fit-content;
+  width: 100%;
+  z-index: -1;
+}
+
+.items ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.items ul li{
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #65334D;
+  list-style: none;
+}
+
+.item-btn {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  z-index: 5;
+}
+
+.row-1{
+  height: fit-content;
+  padding: 20px;
+  margin-top:-20px;
+  margin-left: 30px;
+}
+
+.row-2{
+  height: fit-content;
+  margin-left: 50px;
+}
+
+/*#selected-item {
+  display: none;
+  background-color: black;
+  width: 400px;
+  height: 420px;
+  border-radius: 15px;
+  outline: none;
+  border: 0px;
+  margin-left: 60%;
+  transform: translateY(-420px);
+  position: relative;
+  margin-bottom: 0%;
+  z-index: 1;
+}
+**/
+#pop-up{
+  display: none;
+  background-color: brown;
+  border: 1px solid black;
+  width: 50%;
+  height: 200px;
+}
+
+/*This is the Cart Page**/
+#cart {
+  position: relative;
+  background-color: white;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.cart-container {
+  scroll-snap-align: start;
+  background-color: #FCDDC5;
+  width: 100%;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.cart-title {
+  margin-top: 60px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-title img {
+  margin-right: 10px;
+  width: 64px;
+  height: 64px;
+}
+
+/*This is the About Page**/
+#about {
+  position: relative;
+  background-color: #65334D;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.about-container {
+  scroll-snap-align: start;
+  background-color: #FCDDC5;
+  width: 100%;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.about-title {
+  color: white;
+  margin-top: 60px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title img {
+  margin-right: 10px;
+  width: 64px;
+  height: 64px;
+}
+
+.about-cards {
+  height: 380px;
+}
+
+.card-1 {
+  width: 480px;
+  height: 370px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+.card-2 {
+  width: 480px;
+  height: 370px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 200px;
+  transform: translate(540px,-370px);
+}
